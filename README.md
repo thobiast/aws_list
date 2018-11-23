@@ -1,10 +1,12 @@
 # aws_list
 
-aws_list is a python script to show useful information from AWS.
+**aws_list** - Python script to list useful Amazon Web Services (AWS) information.
 It display information about VPCs, EC2 Instances, Security Groups, EC2 volumes, S3 bucket, etc.
 
 Authorization is performed using Environment Variables or Shared Credentials File (~/.aws/credentials).
 Please check https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html for additional details.
+
+Developed for Python 3.
 
 ### Usage:
 
