@@ -10,7 +10,7 @@ Developed for Python 3.
 
 ### Usage:
 
-```bash
+```console
 $ ./aws_list.py
 usage: aws_list.py [-h] [--debug] [--profile PROFILE]
                    {instances,numinstances,ami,regions,secgroups,subnets,s3,volumes,vpcs}
@@ -45,7 +45,7 @@ Commands:
 
 Each subcommand has its own help.
 
-```bash
+```console
 $ ./aws_list.py instances -h
 usage: aws_list.py instances [-h] [-filter filter_name value] [-sortby SORTBY]
                              [-detail | -tags | -ami | -volumes | -secgroup | -names]
@@ -77,7 +77,7 @@ optional arguments:
 
 ### Example:
 
-```
+```console
 $ ./aws_list.py instances
 +---------------------+----------------------+--------------+------------------+--------------+---------------+----------------+------------------+---------------------------+
 |      InstanceId     | Tag_Name             |    VpcId     | AvailabilityZone | InstanceType | InstanceState |    KeyName     | PrivateIpAddress |         LaunchTime        |
