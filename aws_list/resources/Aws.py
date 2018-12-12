@@ -38,6 +38,10 @@ class Aws_ec2():
         self.ec2 = getattr(ec2, self.resource_type)(self.resource_id)
         self.ec2.load()
         self.metadata = self.ec2.meta.__dict__['data']
+        if not self.metadata:
+            msg("red", "resource_type: " + resource_type)
+            msg("red", "resource_id: " + resource_id)
+            msg("red", "metadata not loaded", 1)
         log.debug("metadata: %s", pprint.pformat(self.metadata))
 
     def show_metadata(self):
